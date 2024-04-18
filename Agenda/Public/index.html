@@ -91,3 +91,13 @@ async function verEventos() {
             lista.appendChild(li);
         });
     }
+async function editarEvento(fecha, hora) {
+        document.getElementById('editFecha').value = fecha;
+        document.getElementById('editHora').value = hora.replace('-', ':');
+        const response = await fetch(/eventos/${fecha}/${hora});
+        const data = await response.json();
+        document.getElementById('editTitulo').value = data.titulo;
+        document.getElementById('editDescripcion').value = data.descripcion;
+        document.getElementById('editModal').style.display = 'block';
+    }
+
