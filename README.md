@@ -39,6 +39,8 @@ Se realizo una agenda de gestiónde eventos usando node.js, express, y html
   * cd .. <br>
    El comando "cd .." permite retroceder un nivel en la estructura de directorios desde la ubicación actual en la línea de comandos. Es útil para navegar de manera eficiente entre directorios cuando se está explorando el sistema de archivos.
 
-  * npm install express 
- 
-  * node agenda.js
+  * npm install express <br> 
+   Este comando se utiliza para instalar el paquete "express" utilizando npm (Node Package Manager). Esto descarga e instala el framework Express.js, que es una herramienta popular en Node.js para construir aplicaciones web y APIs.
+    
+  * node agenda.js <br>
+   Este comando se utiliza para ejecutar un archivo JavaScript llamado "agenda.js" utilizando Node.js. Esto iniciará la ejecución del código JavaScript contenido en el archivo "agenda.js" en el entorno de Node.js
