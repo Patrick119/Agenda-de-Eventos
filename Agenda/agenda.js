@@ -49,3 +49,14 @@ app.get('/eventos', (req, res) => {
     res.json(eventos);
 });
 
+
+app.delete('/eventos/:fecha/:hora', (req, res) => {
+    const { fecha, hora } = req.params;
+    const archivo = path.join(__dirname, 'agenda', fecha, `${hora.replace(':', '-')}.txt`);
+    if (fs.existsSync(archivo)) {
+        fs.unlinkSync(archivo);
+        res.json({ message: 'Evento eliminado con éxito.' });
+    } else {
+        res.status(404).json({ message: 'Evento no encontrado.' });
+    }
+});
