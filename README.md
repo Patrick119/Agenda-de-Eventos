@@ -46,3 +46,10 @@ Integrantes:
     
   * node agenda.js <br>
    Este comando se utiliza para ejecutar un archivo JavaScript llamado "agenda.js" utilizando Node.js. Esto iniciará la ejecución del código JavaScript contenido en el archivo "agenda.js" en el entorno de Node.js
+
+## Descargar imagen en Docker hub
+Para poder descargar la imagen del proyecto, puede hacerlo desde el siguiente enlace:
+> http://hub.docker.com/r/fireflame2/agenda
+
+O directamente desde su docker con el comando:
+`docker pull fireflame2/agenda1:0`
