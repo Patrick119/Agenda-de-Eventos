@@ -121,3 +121,21 @@ button:hover {
     color: #fff;
     margin-bottom: 20px;
 }
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Esto garantiza que el padding no afecte el ancho total */
+}
