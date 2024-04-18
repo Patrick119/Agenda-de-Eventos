@@ -1,0 +1,8 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente */
+    margin: 0;
+    padding: 0;
+    background-color: #181818; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    animation: fadeIn 0.5s ease; /* Animación de entrada */
+}
