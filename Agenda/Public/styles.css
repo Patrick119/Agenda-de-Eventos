@@ -6,3 +6,13 @@ body {
     color: #fff; /* Texto blanco */
     animation: fadeIn 0.5s ease; /* Animación de entrada */
 }
+.header-container {
+    background-color: #00b8b5; /* Color de fondo de la cabecera (azul) */
+    padding: 20px 0;
+    border-bottom: 8px solid #fff; /* Línea inferior */
+    animation: slideInDown 0.5s ease; /* Animación de entrada */
+}
+
+header {
+    text-align: center;
+}
