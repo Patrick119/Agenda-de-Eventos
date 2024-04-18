@@ -94,3 +94,11 @@ button:hover {
         padding: 10px 20px;
     }
 }
+/* Contenedor de la agenda */
+.agenda-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    animation: slideInUp 0.5s ease; /* Animación de entrada */
+}
