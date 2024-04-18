@@ -25,15 +25,20 @@ Se realizo una agenda de gestiónde eventos usando node.js, express, y html
     El comando "cd Agenda" se utiliza para cambiar el directorio de trabajo actual al directorio "Agenda". Después de ejecutar este comando, cualquier operación realizada desde la línea de comandos se llevará a cabo en el contexto del directorio "Agenda".
 
   * mkdir public <br>
-   El comando mkdir public crea un nuevo directorio llamado "public" en el directorio actual.
+   El comando "mkdir public" crea un nuevo directorio llamado "public" en el directorio actual.
 
   * touch agenda.js <br>
-   El comando touch agenda.js crea un nuevo archivo llamado "agenda.js" en el directorio actual. Este comando es útil cuando se necesita crear rápidamente un nuevo archivo vacío para comenzar a escribir código en él.
+   El comando "touch agenda.js" crea un nuevo archivo llamado "agenda.js" en el directorio actual. Este comando es útil cuando se necesita crear rápidamente un nuevo archivo vacío para comenzar a escribir código en él.
   
   * cd public <br>
-   El comando cd public se emplea para navegar al directorio llamado "public" en el sistema de archivos desde la línea de comandos. Esto permite acceder y trabajar con archivos y recursos que se encuentran dentro de ese directorio específico.
+   El comando "cd public" se emplea para navegar al directorio llamado "public" en el sistema de archivos desde la línea de comandos. Esto permite acceder y trabajar con archivos y recursos que se encuentran dentro de ese directorio específico.
 
   * touch index.html <br>
-   El comando touch index.html crea un nuevo archivo llamado "index.html" en el directorio actual. Esto es útil cuando se desea crear rápidamente un archivo HTML vacío para comenzar a desarrollar una página web.
-   
+   El comando "touch index.html" crea un nuevo archivo llamado "index.html" en el directorio actual. Esto es útil cuando se desea crear rápidamente un archivo HTML vacío para comenzar a desarrollar una página web.
 
+  * cd .. <br>
+   El comando "cd .." permite retroceder un nivel en la estructura de directorios desde la ubicación actual en la línea de comandos. Es útil para navegar de manera eficiente entre directorios cuando se está explorando el sistema de archivos.
+
+  * npm install express 
+ 
+  * node agenda.js
