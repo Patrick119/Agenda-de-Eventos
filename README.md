@@ -1,6 +1,6 @@
 # Agenda-de-Eventos
-Se realizo una agenda de gestiónde eventos usando node.js, express, y html
-Integrantes:
+Se realizo una agenda de gestiónde eventos usando node.js, express, y html. <br>
+<br>Integrantes:
 - Jose Alberto Rondón Torres
 - Yoel Ccorihuaman Guillen
 - Kevin Dietmar Gonzales Fernández
