@@ -12,5 +12,12 @@ Se realizo una agenda de gestiónde eventos usando node.js, express, y html
   * apt-get update <br>
     Este comando actualiza la lista de paquetes disponibles desde los repositorios configurados. No instala ni actualiza paquetes, solo actualiza la información de los paquetes disponibles.
 
+  * apt-get install nodejs <br>
+    Este comando se utiliza para instalar el entorno de ejecución de Node.js en el sistema. Descarga e instala Node.js y sus dependencias desde los repositorios de paquetes apt configurados en el sistema.
+
+  * apt-get install npm <br>
+    Este comando se utiliza para instalar el gestor de paquetes npm (Node Package Manager) en el sistema. npm es una herramienta fundamental en el ecosistema de Node.js, permite la instalación y gestión de paquetes de Node.js y sus dependencias de manera sencilla y eficiente.
+
+  
 
 
