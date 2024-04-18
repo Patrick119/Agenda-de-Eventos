@@ -21,6 +21,11 @@ Se realizo una agenda de gestiónde eventos usando node.js, express, y html
   * mkdir Agenda <br>
     Este comando crea un nuevo directorio con el nombre "Agenda" en el directorio actual.
 
+  * cd Agenda <br>
+    El comando "cd Agenda" se utiliza para cambiar el directorio de trabajo actual al directorio "Agenda". Después de ejecutar este comando, cualquier operación realizada desde la línea de comandos se llevará a cabo en el contexto del directorio "Agenda".
+
+
+
   
 
 
