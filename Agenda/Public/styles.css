@@ -139,3 +139,31 @@ button:hover {
     border: 1px solid #ccc;
     box-sizing: border-box; /* Esto garantiza que el padding no afecte el ancho total */
 }
+.input-group textarea {
+    resize: vertical;
+}
+
+/* Lista de eventos */
+.event-list li {
+    margin-bottom: 20px;
+    animation: slideInUp 0.5s ease; /* Animación de entrada */
+}
+
+.event-list .event-buttons {
+    display: flex;
+    justify-content: space-between;
+    animation: slideInRight 0.5s ease; /* Animación de entrada */
+}
+
+.event-list .event-buttons button {
+    width: 48%; /* Para dejar espacio entre los botones */
+    padding: 10px 15px; /* Relleno */
+    font-size: 1em; /* Tamaño de fuente */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+.event-list .event-buttons button:hover {
+    background-color: #005c05; /* Verde más oscuro al pasar el ratón */
+    transform: translateY(-2px); /* Efecto de levantamiento */
+}
