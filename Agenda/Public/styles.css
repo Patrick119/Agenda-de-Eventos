@@ -102,3 +102,22 @@ button:hover {
     margin-top: 50px;
     animation: slideInUp 0.5s ease; /* Animación de entrada */
 }
+/* Formulario de la agenda */
+.agenda-form, .event-list {
+    max-width: 400px;
+}
+
+.agenda-form {
+    background-color: #00b8b5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    animation: slideInLeft 0.5s ease; /* Animación de entrada */
+}
+
+.agenda-form h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
