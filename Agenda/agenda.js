@@ -49,7 +49,6 @@ app.get('/eventos', (req, res) => {
     res.json(eventos);
 });
 
-
 app.delete('/eventos/:fecha/:hora', (req, res) => {
     const { fecha, hora } = req.params;
     const archivo = path.join(__dirname, 'agenda', fecha, `${hora.replace(':', '-')}.txt`);
@@ -73,3 +72,19 @@ app.put('/eventos/:fecha/:hora', (req, res) => {
     }
 });
 
+app.get('/eventos/:fecha/:hora', (req, res) => {
+    const { fecha, hora } = req.params;
+    const archivo = path.join(__dirname, 'agenda', fecha, `${hora.replace(':', '-')}.txt`);
+    if (fs.existsSync(archivo)) {
+        const contenido = fs.readFileSync(archivo, 'utf8');
+        const [titulo, ...descripcionArr] = contenido.split('\n');
+        const descripcion = descripcionArr.join('\n');
+        res.json({ titulo, descripcion });
+    } else {
+        res.status(404).json({ message: 'Evento no encontrado.' });
+    }
+});
+
+app.listen(PORT, () => {
+    console.log(`Servidor corriendo en http://localhost:${PORT}`);
+});
