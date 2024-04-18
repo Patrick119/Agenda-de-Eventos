@@ -41,3 +41,27 @@
             <ul id="listaEventos"></ul>
         </div>
     </div>
+<!-- Modal para editar evento -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <h2>Editar Evento</h2>
+            <div class="input-group">
+                <label for="editFecha">Fecha:</label>
+                <input type="date" id="editFecha">
+            </div>
+            <div class="input-group">
+                <label for="editHora">Hora:</label>
+                <input type="time" id="editHora">
+            </div>
+            <div class="input-group">
+                <label for="editTitulo">Título del evento:</label>
+                <input type="text" id="editTitulo">
+            </div>
+            <div class="input-group">
+                <label for="editDescripcion">Descripción del evento:</label>
+                <textarea id="editDescripcion"></textarea>
+            </div>
+            <button onclick="guardarEdicion()">Guardar Cambios</button>
+        </div>
+    </div>
