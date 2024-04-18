@@ -75,3 +75,22 @@ button {
     transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
 }
+button:hover {
+    background-color: #005c05; /* Verde más oscuro al pasar el ratón */
+    transform: translateY(-4px); /* Efecto de levantamiento */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .botones {
+        flex-wrap: wrap;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
