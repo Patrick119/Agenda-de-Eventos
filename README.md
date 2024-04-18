@@ -18,6 +18,9 @@ Se realizo una agenda de gestiónde eventos usando node.js, express, y html
   * apt-get install npm <br>
     Este comando se utiliza para instalar el gestor de paquetes npm (Node Package Manager) en el sistema. npm es una herramienta fundamental en el ecosistema de Node.js, permite la instalación y gestión de paquetes de Node.js y sus dependencias de manera sencilla y eficiente.
 
+  * mkdir Agenda
+    Este comando crea un nuevo directorio con el nombre "Agenda" en el directorio actual.
+
   
 
 
