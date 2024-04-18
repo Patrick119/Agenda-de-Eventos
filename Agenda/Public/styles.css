@@ -16,3 +16,17 @@ body {
 header {
     text-align: center;
 }
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Alineación vertical */
+    justify-content: flex-start; /* Alineación a la izquierda */
+    margin-left: 20px; /* Espacio a la izquierda */
+    animation: none; /* Deshabilitar la animación */
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
