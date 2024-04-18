@@ -1,6 +1,10 @@
 # Agenda-de-Eventos
-
 Se realizo una agenda de gestiónde eventos usando node.js, express, y html
+Integrantes:
+- Jose Alberto Rondón Torres
+- Yoel Ccorihuaman Guillen
+- Kevin Dietmar Gonzales Fernández
+- Patrick Jefferson Gonzales Fernández
 
 ## Comandos Utilizados en Windows PowerShell <br>
 
