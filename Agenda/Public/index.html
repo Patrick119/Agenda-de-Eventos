@@ -80,3 +80,14 @@
         alert(data.message);
         verEventos();
     }
+async function verEventos() {
+        const response = await fetch('/eventos');
+        const eventos = await response.json();
+        const lista = document.getElementById('listaEventos');
+        lista.innerHTML = '';
+        eventos.forEach(evento => {
+            const li = document.createElement('li');
+            li.innerHTML = <strong>Fecha:</strong> ${evento.fecha} <strong>Hora:</strong> ${evento.hora} <br><strong>Título:</strongg> ${evento.titulo} <br><strong>Descripción:</strong> ${evento.descripcion} <br><button onclick="editarEvento('${evento.fecha}', '${evvento.hora}', '${evento.titulo}', '${evento.descripcion}')">Editar</button> <button onclick="borrarEvento('${evento.fecha}', '${evento.hora}')">Borrar</button>;
+            lista.appendChild(li);
+        });
+    }
