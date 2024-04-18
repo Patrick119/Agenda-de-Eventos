@@ -116,4 +116,19 @@ async function guardarEdicion() {
         document.getElementById('editModal').style.display = 'none';
         verEventos();
     }
+    function cerrarModal() {
+        document.getElementById('editModal').style.display = 'none';
+    }
+    async function borrarEvento(fecha, hora) {
+        const response = await fetch(/eventos/${fecha}/${hora}, {
+            method: 'DELETE'
+        });
+        const data = await response.json();
+        alert(data.message);
+        verEventos();
+    }
+</script>
+
+</body>
+</html>
     
