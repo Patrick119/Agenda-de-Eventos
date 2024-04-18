@@ -65,3 +65,18 @@
             <button onclick="guardarEdicion()">Guardar Cambios</button>
         </div>
     </div>
+<script>
+    async function crearEvento() {
+        const fecha = document.getElementById('fecha').value;
+        const hora = document.getElementById('hora').value.replace(':', '-');
+        const titulo = document.getElementById('titulo').value;
+        const descripcion = document.getElementById('descripcion').value;
+        const response = await fetch('/eventos', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ fecha, hora, titulo, descripcion })
+        });
+        const data = await response.json();
+        alert(data.message);
+        verEventos();
+    }
