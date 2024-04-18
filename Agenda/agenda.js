@@ -60,3 +60,16 @@ app.delete('/eventos/:fecha/:hora', (req, res) => {
         res.status(404).json({ message: 'Evento no encontrado.' });
     }
 });
+
+app.put('/eventos/:fecha/:hora', (req, res) => {
+    const { fecha, hora } = req.params;
+    const { titulo, descripcion } = req.body;
+    const archivo = path.join(__dirname, 'agenda', fecha, `${hora.replace(':', '-')}.txt`);
+    if (fs.existsSync(archivo)) {
+        fs.writeFileSync(archivo, `${titulo}\n${descripcion}`);
+        res.json({ message: 'Evento actualizado con éxito.' });
+    } else {
+        res.status(404).json({ message: 'Evento no encontrado.' });
+    }
+});
+
