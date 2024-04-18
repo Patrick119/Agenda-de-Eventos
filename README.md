@@ -34,5 +34,6 @@ Se realizo una agenda de gestiónde eventos usando node.js, express, y html
    El comando cd public se emplea para navegar al directorio llamado "public" en el sistema de archivos desde la línea de comandos. Esto permite acceder y trabajar con archivos y recursos que se encuentran dentro de ese directorio específico.
 
   * touch index.html <br>
+   El comando touch index.html crea un nuevo archivo llamado "index.html" en el directorio actual. Esto es útil cuando se desea crear rápidamente un archivo HTML vacío para comenzar a desarrollar una página web.
    
 
