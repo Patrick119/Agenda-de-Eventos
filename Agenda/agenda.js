@@ -23,3 +23,29 @@ app.post('/eventos', (req, res) => {
     fs.writeFileSync(archivo, `${titulo}\n${descripcion}`);
     res.json({ message: 'Evento creado con éxito.' });
 });
+
+app.get('/eventos', (req, res) => {
+    const eventosDir = path.join(__dirname, 'agenda');
+    let eventos = [];
+
+    if (fs.existsSync(eventosDir)) {
+        fs.readdirSync(eventosDir).forEach(fecha => {
+            const fechaDir = path.join(eventosDir, fecha);
+            fs.readdirSync(fechaDir).forEach(archivo => {
+                const contenido = fs.readFileSync(path.join(fechaDir, archivo), 'utf8');
+                const lineas = contenido.split('\n');
+                const titulo = lineas[0];
+                const descripcion = lineas.slice(1).join(' '); // Junta el resto de líneas para la descripción
+                eventos.push({
+                    fecha,
+                    hora: archivo.slice(0, -4).replace('-', ':'),
+                    titulo,
+                    descripcion
+                });
+            });
+        });
+    }
+
+    res.json(eventos);
+});
+
