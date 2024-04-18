@@ -167,3 +167,26 @@ button:hover {
     background-color: #005c05; /* Verde más oscuro al pasar el ratón */
     transform: translateY(-2px); /* Efecto de levantamiento */
 }
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #00b8b5;
+    margin: 20% auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    animation: slideInUp 0.5s ease; /* Animación de entrada */
+}
