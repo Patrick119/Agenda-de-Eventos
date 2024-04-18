@@ -30,5 +30,9 @@ Se realizo una agenda de gestiónde eventos usando node.js, express, y html
   * touch agenda.js <br>
    El comando touch agenda.js crea un nuevo archivo llamado "agenda.js" en el directorio actual. Este comando es útil cuando se necesita crear rápidamente un nuevo archivo vacío para comenzar a escribir código en él.
   
+  * cd public <br>
+   El comando cd public se emplea para navegar al directorio llamado "public" en el sistema de archivos desde la línea de comandos. Esto permite acceder y trabajar con archivos y recursos que se encuentran dentro de ese directorio específico.
 
+  * touch index.html <br>
+   
 
