@@ -100,4 +100,20 @@ async function editarEvento(fecha, hora) {
         document.getElementById('editDescripcion').value = data.descripcion;
         document.getElementById('editModal').style.display = 'block';
     }
-
+    
+async function guardarEdicion() {
+        const fecha = document.getElementById('editFecha').value;
+        const hora = document.getElementById('editHora').value.replace(':', '-');
+        const titulo = document.getElementById('editTitulo').value;
+        const descripcion = document.getElementById('editDescripcion').value;
+        const response = await fetch(/eventos/${fecha}/${hora}, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ titulo, descripcion })
+        });
+        const data = await response.json();
+        alert(data.message);
+        document.getElementById('editModal').style.display = 'none';
+        verEventos();
+    }
+    
